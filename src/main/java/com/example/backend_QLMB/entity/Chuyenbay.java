@@ -11,7 +11,7 @@ public class Chuyenbay implements Serializable {
     @Column(name = "Machuyenbay")
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private  int id;
-    @Column(name = "MaTuyen")
+    @Column(name = "MaTuyen",nullable = false)
     private  int MaTuyen;
 
 
