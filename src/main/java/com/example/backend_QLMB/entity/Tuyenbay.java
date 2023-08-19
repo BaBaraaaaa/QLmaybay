@@ -19,4 +19,36 @@ public class Tuyenbay {
     private String Sanbayden;
 
     // Constructors, getters, setters
+
+    public int getMaTuyen() {
+        return MaTuyen;
+    }
+
+    public void setMaTuyen(int maTuyen) {
+        MaTuyen = maTuyen;
+    }
+
+    public Sanbay getSanbay() {
+        return sanbay;
+    }
+
+    public void setSanbay(Sanbay sanbay) {
+        this.sanbay = sanbay;
+    }
+
+    public String getSanbaydi() {
+        return Sanbaydi;
+    }
+
+    public void setSanbaydi(String sanbaydi) {
+        Sanbaydi = sanbaydi;
+    }
+
+    public String getSanbayden() {
+        return Sanbayden;
+    }
+
+    public void setSanbayden(String sanbayden) {
+        Sanbayden = sanbayden;
+    }
 }

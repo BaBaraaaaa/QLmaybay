@@ -14,8 +14,19 @@ public class Chuyenbay implements Serializable {
     @Column(name = "MaTuyen",nullable = false)
     private  int MaTuyen;
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public int getMaTuyen() {
+        return MaTuyen;
+    }
 
-
+    public void setMaTuyen(int maTuyen) {
+        MaTuyen = maTuyen;
+    }
 }

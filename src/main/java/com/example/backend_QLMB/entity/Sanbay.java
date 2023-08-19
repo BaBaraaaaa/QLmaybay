@@ -14,4 +14,28 @@ public class Sanbay {
     private String TinhBay;
 
     // Constructors, getters, setters
+
+    public int getMaSB() {
+        return MaSB;
+    }
+
+    public void setMaSB(int maSB) {
+        MaSB = maSB;
+    }
+
+    public String getTenSB() {
+        return TenSB;
+    }
+
+    public void setTenSB(String tenSB) {
+        TenSB = tenSB;
+    }
+
+    public String getTinhBay() {
+        return TinhBay;
+    }
+
+    public void setTinhBay(String tinhBay) {
+        TinhBay = tinhBay;
+    }
 }

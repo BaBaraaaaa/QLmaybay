@@ -19,4 +19,44 @@ public class Khachhang {
     private String Sove;
 
     // Constructors, getters, setters
+
+    public int getMaKH() {
+        return MaKH;
+    }
+
+    public void setMaKH(int maKH) {
+        MaKH = maKH;
+    }
+
+    public String getTenKH() {
+        return TenKH;
+    }
+
+    public void setTenKH(String tenKH) {
+        TenKH = tenKH;
+    }
+
+    public String getDiachi() {
+        return Diachi;
+    }
+
+    public void setDiachi(String diachi) {
+        Diachi = diachi;
+    }
+
+    public String getCMND() {
+        return CMND;
+    }
+
+    public void setCMND(String CMND) {
+        this.CMND = CMND;
+    }
+
+    public String getSove() {
+        return Sove;
+    }
+
+    public void setSove(String sove) {
+        Sove = sove;
+    }
 }

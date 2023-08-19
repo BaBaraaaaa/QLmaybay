@@ -15,4 +15,28 @@ public class Maybay {
     private int tongsoghe;
 
     // Constructors, getters, setters
+
+    public int getMaMB() {
+        return maMB;
+    }
+
+    public void setMaMB(int maMB) {
+        this.maMB = maMB;
+    }
+
+    public String getTenMB() {
+        return tenMB;
+    }
+
+    public void setTenMB(String tenMB) {
+        this.tenMB = tenMB;
+    }
+
+    public int getTongsoghe() {
+        return tongsoghe;
+    }
+
+    public void setTongsoghe(int tongsoghe) {
+        this.tongsoghe = tongsoghe;
+    }
 }

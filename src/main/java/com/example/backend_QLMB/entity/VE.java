@@ -30,4 +30,68 @@ public class VE {
     private String Tinhtrang;
 
     // Constructors, getters, setters
+
+    public int getMaVE() {
+        return MaVE;
+    }
+
+    public void setMaVE(int maVE) {
+        MaVE = maVE;
+    }
+
+    public Chuyenbay getChuyenbay() {
+        return chuyenbay;
+    }
+
+    public void setChuyenbay(Chuyenbay chuyenbay) {
+        this.chuyenbay = chuyenbay;
+    }
+
+    public Khachhang getKhachhang() {
+        return khachhang;
+    }
+
+    public void setKhachhang(Khachhang khachhang) {
+        this.khachhang = khachhang;
+    }
+
+    public Hoadon getHoadon() {
+        return hoadon;
+    }
+
+    public void setHoadon(Hoadon hoadon) {
+        this.hoadon = hoadon;
+    }
+
+    public String getHangve() {
+        return Hangve;
+    }
+
+    public void setHangve(String hangve) {
+        Hangve = hangve;
+    }
+
+    public String getLoaive() {
+        return Loaive;
+    }
+
+    public void setLoaive(String loaive) {
+        Loaive = loaive;
+    }
+
+    public int getSohe() {
+        return Sohe;
+    }
+
+    public void setSohe(int sohe) {
+        Sohe = sohe;
+    }
+
+    public String getTinhtrang() {
+        return Tinhtrang;
+    }
+
+    public void setTinhtrang(String tinhtrang) {
+        Tinhtrang = tinhtrang;
+    }
 }

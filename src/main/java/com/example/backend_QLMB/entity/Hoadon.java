@@ -24,4 +24,44 @@ public class Hoadon {
     private int Thanhtien;
 
     // Constructors, getters, setters
+
+    public int getMaHD() {
+        return MaHD;
+    }
+
+    public void setMaHD(int maHD) {
+        MaHD = maHD;
+    }
+
+    public Khachhang getKhachhang() {
+        return khachhang;
+    }
+
+    public void setKhachhang(Khachhang khachhang) {
+        this.khachhang = khachhang;
+    }
+
+    public Nhanvien getNhanvien() {
+        return nhanvien;
+    }
+
+    public void setNhanvien(Nhanvien nhanvien) {
+        this.nhanvien = nhanvien;
+    }
+
+    public LocalDateTime getNgaylap() {
+        return Ngaylap;
+    }
+
+    public void setNgaylap(LocalDateTime ngaylap) {
+        Ngaylap = ngaylap;
+    }
+
+    public int getThanhtien() {
+        return Thanhtien;
+    }
+
+    public void setThanhtien(int thanhtien) {
+        Thanhtien = thanhtien;
+    }
 }
