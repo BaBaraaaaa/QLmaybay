@@ -1,8 +1,11 @@
 package com.example.backend_QLMB.DTO;
 
+
+
 import com.example.backend_QLMB.entity.Role;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+
 
 public class NhanvienDto {
     private int id;
@@ -13,10 +16,10 @@ public class NhanvienDto {
     private String avatarImg;
     private  String Diachi;
     private  String sdt;
-    private LocalDateTime Ngaysinh;
-    private LocalDateTime Ngaytao;
+    private Date Ngaysinh;
+    private Date Ngaytao;
     private String Gioitinh;
-    private int role;
+    private String role;
 
 //Getter Setter
     public void setId(int id) {
@@ -51,11 +54,11 @@ public class NhanvienDto {
         this.sdt = sdt;
     }
 
-    public void setNgaysinh(LocalDateTime ngaysinh) {
+    public void setNgaysinh(Date ngaysinh) {
         Ngaysinh = ngaysinh;
     }
 
-    public void setNgaytao(LocalDateTime ngaytao) {
+    public void setNgaytao(Date ngaytao) {
         Ngaytao = ngaytao;
     }
 
@@ -63,23 +66,71 @@ public class NhanvienDto {
         Gioitinh = gioitinh;
     }
 
-    public void setRole(int role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
     //Contrustor
 
+    public int getId() {
+        return id;
+    }
+
+    public String getTenNV() {
+        return tenNV;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getAvatarImg() {
+        return avatarImg;
+    }
+
+    public String getDiachi() {
+        return Diachi;
+    }
+
+    public String getSdt() {
+        return sdt;
+    }
+
+    public Date getNgaysinh() {
+        return Ngaysinh;
+    }
+
+    public Date getNgaytao() {
+        return Ngaytao;
+    }
+
+    public String getGioitinh() {
+        return Gioitinh;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
     public NhanvienDto(int id, String tenNV, String email, String username,
-                        String avatarImg, String diachi,
-                       String sdt, LocalDateTime ngaysinh,
-                       LocalDateTime ngaytao,
-                       String gioitinh, int role) {
+                       String avatarImg, String diachi,
+                       String sdt, Date ngaysinh,
+                       Date ngaytao,
+                       String gioitinh, String role) {
         this.id = id;
         this.tenNV = tenNV;
         this.email = email;
         this.username = username;
         this.avatarImg = avatarImg;
-        Diachi = diachi;
+        this.Diachi = diachi;
         this.sdt = sdt;
         Ngaysinh = ngaysinh;
         Ngaytao = ngaytao;
@@ -87,6 +138,18 @@ public class NhanvienDto {
         this.role = role;
     }
 
-    public NhanvienDto() {
+    public NhanvienDto(int id, String tenNV, String email, String username, String password, String avatarImg, String diachi, String sdt, Date ngaysinh, Date ngaytao, String gioitinh, String role) {
+        this.id = id;
+        this.tenNV = tenNV;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+        this.avatarImg = avatarImg;
+        Diachi = diachi;
+        this.sdt = sdt;
+        Ngaysinh = ngaysinh;
+        Ngaytao = ngaytao;
+        Gioitinh = gioitinh;
+        this.role = role;
     }
 }
