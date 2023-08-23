@@ -2,9 +2,11 @@ package com.example.backend_QLMB.entity;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "Khachhang")
-public class Khachhang {
+public class Khachhang implements Serializable {
     @Id
     @Column(name = "MaKH")
     @GeneratedValue (strategy = GenerationType.IDENTITY)

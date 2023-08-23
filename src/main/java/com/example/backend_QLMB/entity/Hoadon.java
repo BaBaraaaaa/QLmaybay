@@ -2,10 +2,11 @@ package com.example.backend_QLMB.entity;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Entity
-public class Hoadon {
+public class Hoadon implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int MaHD;

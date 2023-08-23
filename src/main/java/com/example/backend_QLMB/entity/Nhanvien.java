@@ -2,38 +2,40 @@ package com.example.backend_QLMB.entity;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "Nhanvien")
-public class Nhanvien {
+public class Nhanvien implements Serializable {
     @Id
     @Column(name = "MaNV", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int MaNV;
-    @Column(name = "TenNV", nullable = false)
+    @Column(name = "TenNV", nullable = false,length = 50)
     private String TenNV;
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false,length = 50)
     private String email;
-    @Column(name = "usename", nullable = false)
+    @Column(name = "usename", nullable = false,length = 50)
     private String usename;
-    @Column(name = "password", nullable = false)
+    @Column(name = "password", nullable = false,length = 50)
     private String password;
-    @Column(name = "avatarImg", nullable = false)
+    @Column(name = "avatar_img" ,length = 50)
     private String avatarImg;
-    @Column(name = "Diachi", nullable = false)
+    @Column(name = "Diachi", nullable = false,length = 50)
     private String Diachi;
-    @Column(name = "SDT", nullable = false)
+    @Column(name = "SDT", nullable = false,length = 20)
     private String SDT;
     @Column(name = "Ngaysinh", nullable = false)
-    private LocalDateTime Ngaysinh;
+    private Date Ngaysinh;
     @Column(name = "Ngaytao", nullable = false)
-    private LocalDateTime Ngaytao;
-    @Column(name = "Gioitinh", nullable = false)
+    private Date Ngaytao;
+    @Column(name = "Gioitinh", length = 5)
     private String Gioitinh;
 
     @ManyToOne
-    @JoinColumn(name = "RoleID", referencedColumnName = "RoleID", foreignKey = @ForeignKey(name = "FK_NHANVIEN_ROLE"))
+    @JoinColumn(name = "RoleID", referencedColumnName = "RoleID",nullable = false)
     private Role role;
 
     // Constructors, getters, setters
@@ -102,19 +104,19 @@ public class Nhanvien {
         this.SDT = SDT;
     }
 
-    public LocalDateTime getNgaysinh() {
+    public Date getNgaysinh() {
         return Ngaysinh;
     }
 
-    public void setNgaysinh(LocalDateTime ngaysinh) {
+    public void setNgaysinh(Date ngaysinh) {
         Ngaysinh = ngaysinh;
     }
 
-    public LocalDateTime getNgaytao() {
+    public Date getNgaytao() {
         return Ngaytao;
     }
 
-    public void setNgaytao(LocalDateTime ngaytao) {
+    public void setNgaytao(Date ngaytao) {
         Ngaytao = ngaytao;
     }
 
@@ -132,5 +134,24 @@ public class Nhanvien {
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public Nhanvien(int maNV, String tenNV, String email, String usename, String password, String avatarImg, String diachi,
+                    String SDT, Date ngaysinh, Date ngaytao, String gioitinh, Role role) {
+        MaNV = maNV;
+        TenNV = tenNV;
+        this.email = email;
+        this.usename = usename;
+        this.password = password;
+        this.avatarImg = avatarImg;
+        Diachi = diachi;
+        this.SDT = SDT;
+        Ngaysinh = ngaysinh;
+        Ngaytao = ngaytao;
+        Gioitinh = gioitinh;
+        this.role = role;
+    }
+
+    public Nhanvien() {
     }
 }
